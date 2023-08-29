@@ -27,7 +27,6 @@ public class Explicit {
 		
 		//Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(2));
 		
-		
 	}
 
 }
