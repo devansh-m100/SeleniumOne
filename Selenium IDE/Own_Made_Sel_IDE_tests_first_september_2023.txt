@@ -1,0 +1,58 @@
+10 Test Cases based on the Website https://only-testing-blog.blogspot.com/
+
+1. Test Case 1
+
+Copy And Paste UserName from the ones that are available 
+Copy And Paste Password from the ones that are available 
+Login 
+And Verify whether Successfully logged in or not.
+
+2. Add to cart
+
+Add first product to cart
+Verify whether product added to cart
+
+3 Checkout
+
+Click on Cart & Checkout
+
+4 Finish 
+
+Enter Your Information 
+And click Finish
+Verify whether order is placed or not
+
+5 About Section
+
+Navigate to About 
+Close the alerts that pop up
+Go to Products Drop down 
+And verify whether Sauce Mobile is selected.
+
+6 Move & Highlight
+
+Move & Focus the cursor on the content written in About Mobile App Testing.
+Then Highlight the content paragraph.
+
+7 Using StoreElementIndex()
+
+Without copying, print the About Heading
+
+8 Test Case 8
+
+In Only Testing Blog
+
+Print 24 from the test table
+
+9 Test Case 9
+
+In 21st September 2013 Testing 
+
+Check whether Audi is selected from the drop down in select box
+
+10 Test Case 10 
+
+get the current page url & print the url
+
+
+
