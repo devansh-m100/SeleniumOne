@@ -4,6 +4,9 @@
  * since JDK11 08/29/2023
  */
 
+/*
+ * 
+ */
 package com.SeleniumDaySeven;
 
 import java.util.concurrent.TimeUnit;
@@ -57,5 +60,10 @@ public class DialogBox {
 		
 		Thread.sleep(2000);
 		//driver.findElement(By.);	
+	
 	}
 }
+/*
+ * 3 types of alerts - Simple, Prompt,  
+ */
+*/

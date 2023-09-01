@@ -30,15 +30,15 @@ public class TableHandling {
             System.out.println(i.getText());
         }
 
-        System.out.println("----------------------------------------");
+        System.out.println("---------------------------------------------------------");
         List <WebElement> rows = driver.findElements(By.xpath("//*[@id=\"table1\"]//tbody//tr"));
         
+        //To print column td is constant tr varies, code is below for loop
         for(int i=0;i<rows.size();i++) {
             WebElement num=driver.findElement(By.xpath("//table[@id='table1']//tr["+(i+1)+"]//td[3]"));
             
             System.out.println(num.getText());
         }
-        
     }
     
 }
