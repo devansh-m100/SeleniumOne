@@ -1,0 +1,638 @@
+{
+  "id": "9c23dec4-d37e-407a-9102-4ec54bee63a6",
+  "version": "2.0",
+  "name": "while_loop",
+  "url": "https://www.demoblaze.com/",
+  "tests": [{
+    "id": "733925b7-3efb-4617-b2d0-64c84b2399ed",
+    "name": "loop_2",
+    "commands": [{
+      "id": "91f6120b-b22f-4b01-bee4-b48c6c67c9ab",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.demoblaze.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ef4889d1-6e77-4876-9fc5-b75f67b59f70",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-4:nth-child(1) .card-block",
+      "targets": [
+        ["css=.col-lg-4:nth-child(1) .card-block", "css:finder"],
+        ["xpath=//div[@id='tbodyid']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c3cced41-2982-4f04-bd20-79b9b6c5bd8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-4:nth-child(1) h5",
+      "targets": [
+        ["css=.col-lg-4:nth-child(1) h5", "css:finder"],
+        ["xpath=//div[@id='tbodyid']/div/div/div/h5", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'$360')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c62a800-6c49-4bfb-8b24-7530b9c2fe76",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col-lg-4:nth-child(1) h5",
+      "targets": [],
+      "value": "a"
+    }, {
+      "id": "d2adc819-653d-40f0-bae8-b92d8ea23527",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${a}.substring(1,4)",
+      "targets": [],
+      "value": "a"
+    }, {
+      "id": "62c5d310-d415-44a2-8e2a-7e6694289f05",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Samsung galaxy s6",
+      "targets": [
+        ["linkText=Samsung galaxy s6", "linkText"],
+        ["css=.col-lg-4:nth-child(1) .hrefch", "css:finder"],
+        ["xpath=//a[contains(text(),'Samsung galaxy s6')]", "xpath:link"],
+        ["xpath=//div[@id='tbodyid']/div/div/div/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'prod.html?idp_=1')])[2]", "xpath:href"],
+        ["xpath=//h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Samsung galaxy s6')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56d26905-d435-4398-8ed5-ce285f349de4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.price-container",
+      "targets": [
+        ["css=.price-container", "css:finder"],
+        ["xpath=//div[@id='tbodyid']/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'$360 *includes tax')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fb6c506-4a20-4435-9f10-3fe97bbe3124",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.price-container",
+      "targets": [
+        ["css=.price-container", "css:finder"],
+        ["xpath=//div[@id='tbodyid']/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'$360 *includes tax')]", "xpath:innerText"]
+      ],
+      "value": "b"
+    }, {
+      "id": "93e81c05-8cbd-476c-b1f3-7295df80dfad",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${b}.substring(1,4)",
+      "targets": [],
+      "value": "b"
+    }, {
+      "id": "d36779de-01b9-4542-961f-75f5f5a2a483",
+      "comment": "",
+      "command": "assert",
+      "target": "a",
+      "targets": [],
+      "value": "${b}"
+    }, {
+      "id": "c45941af-9a68-4610-95c3-6ea842a21c32",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "74565f89-82bd-44e6-9421-cd2a7a61daa7",
+    "name": "loop-1",
+    "commands": [{
+      "id": "b252bccd-d1b5-468a-aeee-924f732e64e3",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d8e0c95-845c-45bc-8701-3d153ee66977",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x660",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f09728d3-5576-4f60-8906-f995ffc73878",
+      "comment": "",
+      "command": "store",
+      "target": "1",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "e77c9ce1-154c-4d0b-8db0-43e15ff1a735",
+      "comment": "",
+      "command": "while",
+      "target": "${i}<=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3fde5e2-4467-4bcf-b8ed-b6eeb49dab22",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=iPhone",
+      "targets": [
+        ["linkText=iPhone", "linkText"],
+        ["css=.col:nth-child(2) .content a", "css:finder"],
+        ["xpath=//a[contains(text(),'iPhone')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div[2]/div[2]/form/div/div[2]/div/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/product&language=en-gb&product_id=40')])[2]", "xpath:href"],
+        ["xpath=//div[2]/form/div/div[2]/div/h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'iPhone')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32d38f01-1ffb-4aeb-94a4-f3696e7b77f2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-sm li:nth-child(3)",
+      "targets": [
+        ["css=.col-sm li:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Availability: In Stock')]", "xpath:innerText"]
+      ],
+      "value": "Availability: In Stock"
+    }, {
+      "id": "fed2457b-d99d-45f8-acc6-932bfe6bda69",
+      "comment": "",
+      "command": "executeScript",
+      "target": "history.back()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97c60498-fa49-478a-a1b6-25ba1d18a1b2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Number (${i})+1",
+      "targets": [],
+      "value": "i"
+    }, {
+      "id": "db58fb97-1afd-487b-a912-99bb8c2a59fc",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba3c6ec4-e34f-4032-96f9-6f030f4cbf4a",
+      "comment": "",
+      "command": "echo",
+      "target": "Executed ${i}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f608e36e-e69d-4958-be80-71e455af2cfa",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b265a7ed-1619-4d03-b25d-0db9eb524534",
+    "name": "loop_3",
+    "commands": [{
+      "id": "978c71bc-2193-41e7-84c8-d52e5283d6ab",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09d40ee5-8026-4a86-b55e-5af932dde48f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e2925b1-67e7-436e-a90b-09082c7ef3d9",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col:nth-child(1) > form .price-new",
+      "targets": [
+        ["css=.col:nth-child(1) > form .price-new", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/form/div/div[2]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'$602.00')]", "xpath:innerText"]
+      ],
+      "value": "price1"
+    }, {
+      "id": "3b552fcf-ca3d-4916-a60e-7ee03566bdfa",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return (${price1}.substring(1,4))",
+      "targets": [],
+      "value": "price1"
+    }, {
+      "id": "4e55ed5f-eac0-4d34-8a11-75818bcc190c",
+      "comment": "",
+      "command": "if",
+      "target": "${price1}<700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a20ed5a-78fc-4612-b2ae-62663eba7d04",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(1) > form .price-new",
+      "targets": [
+        ["css=.col:nth-child(1) > form .price-new", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div/form/div/div[2]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'$602.00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e3350d7-a10c-40c8-8e14-e518cc16b3eb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MacBook",
+      "targets": [
+        ["linkText=MacBook", "linkText"],
+        ["css=.col:nth-child(1) > form .content a", "css:finder"],
+        ["xpath=//a[contains(text(),'MacBook')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div[2]/div/form/div/div[2]/div/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/product&language=en-gb&product_id=43')])[2]", "xpath:href"],
+        ["xpath=//h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MacBook')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "80cd4ac5-b626-48a4-8589-1736b2e3e1fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(1)",
+      "targets": [
+        ["css=h2:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/ul[2]/li/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'$602.00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cc3a4b9-da6a-4370-82cf-233e6076bc98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.price-new",
+      "targets": [
+        ["css=.price-new", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/ul[2]/li/h2/span", "xpath:idRelative"],
+        ["xpath=//h2/span", "xpath:position"],
+        ["xpath=//span[contains(.,'$602.00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bba7573b-7853-41f0-bca6-bd6c2849bc68",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac1a4028-093b-4a8f-bac2-5a19bf50ca49",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "10b17d32-6c6b-4dba-b135-a02c33b80b7a",
+    "name": "loop_4",
+    "commands": [{
+      "id": "2b6e9734-2b73-484e-8f27-bcc664c44705",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.opencart.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cda76b4f-442a-4cf3-b97f-44529136bae7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e92a306f-9fed-4bd7-8b09-cf0ae904be2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(2) .price-new",
+      "targets": [
+        ["css=.col:nth-child(2) .price-new", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/div[2]/form/div/div[2]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/div[2]/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'$123.20')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfce546a-e77e-4514-8617-b1cb87c6ab2d",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col:nth-child(2) .price-new",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "8732ddfe-928f-49d5-b788-67d8028e894d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return (${x}.substring(1,4))",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "ac24c325-c92e-46bb-9b7b-a3210210dbe7",
+      "comment": "",
+      "command": "if",
+      "target": "${x}<100",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4ac8602-ed78-4691-9ad2-ff4554a10360",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "badc8a0e-22e8-46f7-be8f-1a0a2ca611d2",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cdffe806-409e-462a-b475-654dddd22103",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=iPhone",
+      "targets": [
+        ["linkText=iPhone", "linkText"],
+        ["css=.col:nth-child(2) .content a", "css:finder"],
+        ["xpath=//a[contains(text(),'iPhone')]", "xpath:link"],
+        ["xpath=//div[@id='content']/div[2]/div[2]/form/div/div[2]/div/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://demo.opencart.com/index.php?route=product/product&language=en-gb&product_id=40')])[2]", "xpath:href"],
+        ["xpath=//div[2]/form/div/div[2]/div/h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'iPhone')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c66d90d-3e73-45c1-b5c3-067fd710a3c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2:nth-child(1)",
+      "targets": [
+        ["css=h2:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/ul[2]/li/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'$123.20')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f2853fc-41e1-4c1c-b56d-5a6317cb299f",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2 > .price-new",
+      "targets": [
+        ["css=h2 > .price-new", "css:finder"],
+        ["xpath=//div[@id='content']/div/div[2]/ul[2]/li/h2/span", "xpath:idRelative"],
+        ["xpath=//h2/span", "xpath:position"],
+        ["xpath=//span[contains(.,'$123.20')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3c882f8-cead-4b41-8ddd-7950a41b3088",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a238da4-b35e-49b9-bcf7-295db38b19e7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "74d2b3b8-5e51-423e-8512-7c210653600a",
+    "name": "loop_5",
+    "commands": [{
+      "id": "d86e9ae1-f8c8-4667-96e8-ded350e85aac",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.demoblaze.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ac62e14-b43f-47ee-ba5d-b29b9ce183fb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9e422f9-b108-4d91-9355-f5d9f850cf81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-4:nth-child(1) h5",
+      "targets": [
+        ["css=.col-lg-4:nth-child(1) h5", "css:finder"],
+        ["xpath=//div[@id='tbodyid']/div/div/div/h5", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'$360')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "016d7d42-dfd9-471f-9489-afc777a4b118",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col-lg-4:nth-child(1) h5",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "3ab7ce04-0a5b-48cd-a920-589180919f00",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return (${x}.substring(1,4))",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "86e67277-1a99-4d5f-8092-823f2d6e2145",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Samsung galaxy s6",
+      "targets": [
+        ["linkText=Samsung galaxy s6", "linkText"],
+        ["css=.col-lg-4:nth-child(1) .hrefch", "css:finder"],
+        ["xpath=//a[contains(text(),'Samsung galaxy s6')]", "xpath:link"],
+        ["xpath=//div[@id='tbodyid']/div/div/div/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'prod.html?idp_=1')])[2]", "xpath:href"],
+        ["xpath=//h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Samsung galaxy s6')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "320f789e-22e8-49f3-ab09-d3faa6ca5c34",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add to cart",
+      "targets": [
+        ["linkText=Add to cart", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Add to cart')]", "xpath:link"],
+        ["xpath=//a[@onclick='addToCart(1)']", "xpath:attributes"],
+        ["xpath=//div[@id='tbodyid']/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[9]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "add11ef7-c9b2-4894-bb2a-b7b796afd3af",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Product added",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4975f85c-8f45-47ea-b9a5-4b041bccad34",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Add to cart",
+      "targets": [
+        ["linkText=Add to cart", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Add to cart')]", "xpath:link"],
+        ["xpath=//a[@onclick='addToCart(1)']", "xpath:attributes"],
+        ["xpath=//div[@id='tbodyid']/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[9]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e0d7b9a-535b-4eb9-9b4e-0044a960537d",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Product added",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f055ab5b-0b9e-4fc5-9a4b-0254f980d01c",
+      "comment": "",
+      "command": "click",
+      "target": "id=cartur",
+      "targets": [
+        ["id=cartur", "id"],
+        ["linkText=Cart", "linkText"],
+        ["css=#cartur", "css:finder"],
+        ["xpath=//a[contains(text(),'Cart')]", "xpath:link"],
+        ["xpath=//a[@id='cartur']", "xpath:attributes"],
+        ["xpath=//div[@id='navbarExample']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'cart.html')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "466c9321-fc34-4598-a7c9-502ea0001f35",
+      "comment": "",
+      "command": "click",
+      "target": "id=totalp",
+      "targets": [
+        ["id=totalp", "id"],
+        ["css=#totalp", "css:finder"],
+        ["xpath=//h3[@id='totalp']", "xpath:attributes"],
+        ["xpath=//div[@id='page-wrapper']/div/div[2]/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'720')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19cbcd08-149e-4b83-b3b1-dced32288184",
+      "comment": "",
+      "command": "storeText",
+      "target": "id=totalp",
+      "targets": [],
+      "value": "y"
+    }, {
+      "id": "20656cb3-5578-462e-9470-4c1d9b3f40bc",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return(${y}.substring(1,4))",
+      "targets": [],
+      "value": "y"
+    }, {
+      "id": "e1259694-258e-4d1d-9840-c1a3aded1d9d",
+      "comment": "",
+      "command": "if",
+      "target": "${x}==${y}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "38c7a4b6-f4b8-473a-9f30-197105200fa1",
+      "comment": "",
+      "command": "echo",
+      "target": "Actual Value is equal to cart value ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df4323cf-f144-48a8-8fa3-edc14b6c05ba",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cca65853-b208-41ab-bd1b-4b49b51153c1",
+      "comment": "",
+      "command": "echo",
+      "target": "Actual value is ${y} and cart value is ${x}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4dfb80c6-cd77-4f5b-8a48-b2730bb82da5",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e80abc08-87be-4a15-9c47-50c0c427bc88",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7847920a-c074-4dfc-ac14-5f9435a12044",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["733925b7-3efb-4617-b2d0-64c84b2399ed"]
+  }],
+  "urls": ["https://demo.opencart.com/", "https://www.demoblaze.com/"],
+  "plugins": []
+}

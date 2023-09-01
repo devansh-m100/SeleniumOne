@@ -1,0 +1,939 @@
+{
+  "id": "3b965c01-6d21-468f-878d-ac9d0ca286d1",
+  "version": "2.0",
+  "name": "Task_1/9/23",
+  "url": "http://demowebshop.tricentis.com/",
+  "tests": [{
+    "id": "90d2dd34-4433-4c1e-994f-3ae26bd27b47",
+    "name": "TC1",
+    "commands": [{
+      "id": "5a25355c-745f-486a-8c09-040f4988cfbd",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90331f12-c916-482a-b8e9-370804e4850a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a0e8e39-9a78-45d4-97f6-d9e867a3004f",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "908c8b40-d5ec-459a-9ea2-2d463eb862a9",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "${x}",
+      "targets": [],
+      "value": "Demo Web Shop"
+    }, {
+      "id": "35b7f1ec-263a-4fd7-a34d-85730c5706f5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,880.6666870117188)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04357a72-72a5-4cd2-bb4a-5256f2a5ab6b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "66814716-1dad-41aa-9114-0b20808ce499",
+    "name": "TC2",
+    "commands": [{
+      "id": "10ed7f8c-9baf-4f75-b12e-237f4169ce66",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a055f584-b593-44e9-806c-0206c77e580c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "198b86b6-a5ab-434a-afe7-e87a6bdd2ff6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Log in')]",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.ico-login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "71fc1119-6ad5-4541-8ca4-c843cf57a5ca",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "e06399f9-9b47-49c3-a91f-eba4dce3fd2c",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "${x}",
+      "targets": [],
+      "value": "Demo Web Shop.login"
+    }, {
+      "id": "091bb2c2-938f-4eda-ac66-4356edf14501",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Register",
+      "targets": [
+        ["linkText=Register", "linkText"],
+        ["css=.ico-register", "css:finder"],
+        ["xpath=//a[contains(text(),'Register')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Register')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76361649-49b3-4b06-9b79-8e253fca106e",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "y"
+    }, {
+      "id": "52a8671c-d05c-43cb-a770-2bec81b7d912",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "${y}",
+      "targets": [],
+      "value": "Demo Web Shop.register"
+    }, {
+      "id": "40575119-8f99-4174-bca9-731d824acf13",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6c5b64ec-08ff-4161-a0b2-ba7ef3851b3d",
+    "name": "TC3",
+    "commands": [{
+      "id": "b6460568-a7ea-4ead-a6b4-59520651ef39",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5aaf8f4-4a5f-40bb-b76b-2094ab3684fb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "462f3a1f-94db-45a0-9042-57b4262b0706",
+      "comment": "",
+      "command": "click",
+      "target": "id=small-searchterms",
+      "targets": [
+        ["id=small-searchterms", "id"],
+        ["name=q", "name"],
+        ["css=#small-searchterms", "css:finder"],
+        ["xpath=//input[@id='small-searchterms']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21bdfef0-1ed8-49c1-bd95-949aca9e2b18",
+      "comment": "",
+      "command": "click",
+      "target": "id=small-searchterms",
+      "targets": [
+        ["id=small-searchterms", "id"],
+        ["name=q", "name"],
+        ["css=#small-searchterms", "css:finder"],
+        ["xpath=//input[@id='small-searchterms']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37404413-b57c-43ef-9695-e978c73e5d45",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=small-searchterms",
+      "targets": [
+        ["id=small-searchterms", "id"],
+        ["name=q", "name"],
+        ["css=#small-searchterms", "css:finder"],
+        ["xpath=//input[@id='small-searchterms']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06478fe1-6394-4314-9313-afa654903862",
+      "comment": "",
+      "command": "click",
+      "target": "id=small-searchterms",
+      "targets": [
+        ["id=small-searchterms", "id"],
+        ["name=q", "name"],
+        ["css=#small-searchterms", "css:finder"],
+        ["xpath=//input[@id='small-searchterms']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2d65e6f-ddba-4e60-bd38-b91a3064177d",
+      "comment": "",
+      "command": "click",
+      "target": "id=small-searchterms",
+      "targets": [
+        ["id=small-searchterms", "id"],
+        ["name=q", "name"],
+        ["css=#small-searchterms", "css:finder"],
+        ["xpath=//input[@id='small-searchterms']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e87bbbc0-f3ce-4ecf-9050-110316478417",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=small-searchterms",
+      "targets": [
+        ["id=small-searchterms", "id"],
+        ["name=q", "name"],
+        ["css=#small-searchterms", "css:finder"],
+        ["xpath=//input[@id='small-searchterms']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c43091a-8d2e-43f1-b416-f4d6a1c81257",
+      "comment": "",
+      "command": "click",
+      "target": "id=small-searchterms",
+      "targets": [
+        ["id=small-searchterms", "id"],
+        ["name=q", "name"],
+        ["css=#small-searchterms", "css:finder"],
+        ["xpath=//input[@id='small-searchterms']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fac0d0e8-2ad5-45ce-8db0-41a0ed5f4742",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.search-box-button",
+      "targets": [
+        ["css=.search-box-button", "css:finder"],
+        ["xpath=//input[@value='Search']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b02e97df-ba60-4d20-88eb-c0604b0fc53e",
+      "comment": "",
+      "command": "type",
+      "target": "id=small-searchterms",
+      "targets": [
+        ["id=small-searchterms", "id"],
+        ["name=q", "name"],
+        ["css=#small-searchterms", "css:finder"],
+        ["xpath=//input[@id='small-searchterms']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "laptop"
+    }, {
+      "id": "be319def-7697-45f3-832a-631fbb2cc0fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-box-button",
+      "targets": [
+        ["css=.search-box-button", "css:finder"],
+        ["xpath=//input[@value='Search']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ad29fb5-3735-424d-af8b-82079db51dc2",
+      "comment": "",
+      "command": "click",
+      "target": "id=Q",
+      "targets": [
+        ["id=Q", "id"],
+        ["name=Q", "name"],
+        ["css=#Q", "css:finder"],
+        ["xpath=//input[@id='Q']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7146bc9d-dbe2-435f-a0e3-ad610872aad5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=small-searchterms",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cffb100-6be1-443d-be24-07284a849c5b",
+      "comment": "",
+      "command": "click",
+      "target": "id=Q",
+      "targets": [
+        ["id=Q", "id"],
+        ["name=Q", "name"],
+        ["css=#Q", "css:finder"],
+        ["xpath=//input[@id='Q']", "xpath:attributes"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce696d58-bb09-44b9-88ef-2ee06340c8f9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "34c3e5c2-1703-4728-9a5e-a05b87dd032e",
+    "name": "TC4",
+    "commands": [{
+      "id": "36ea9c5b-5f45-464f-b8a2-1b1d7cf83b3a",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80f89827-cd0d-45bb-a81d-9557cca027f0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57c382e1-fa11-4a6b-b61a-66e1d557489f",
+      "comment": "",
+      "command": "click",
+      "target": "id=small-searchterms",
+      "targets": [
+        ["id=small-searchterms", "id"],
+        ["name=q", "name"],
+        ["css=#small-searchterms", "css:finder"],
+        ["xpath=//input[@id='small-searchterms']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0aedd598-9c4f-40e8-bb51-c39fa41b7ea5",
+      "comment": "",
+      "command": "type",
+      "target": "id=small-searchterms",
+      "targets": [
+        ["id=small-searchterms", "id"],
+        ["name=q", "name"],
+        ["css=#small-searchterms", "css:finder"],
+        ["xpath=//input[@id='small-searchterms']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "simple computer"
+    }, {
+      "id": "82de13b7-9865-4f5e-9e53-61d9580fe652",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='/search']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"],
+        ["xpath=//form[contains(.,'1 result is available, use up and down arrow keys to navigate.\n ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ff3310e-c9e5-4f97-9ddb-4767155bca32",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-box-button",
+      "targets": [
+        ["css=.search-box-button", "css:finder"],
+        ["xpath=//input[@value='Search']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62110329-c1d1-49d9-9f21-3d6392cbabbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-2",
+      "targets": [
+        ["css=.button-2", "css:finder"],
+        ["xpath=//input[@value='Add to cart']", "xpath:attributes"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d8cf582-cb99-4276-944b-2c4a120f4807",
+      "comment": "",
+      "command": "click",
+      "target": "id=product_attribute_75_5_31_96",
+      "targets": [
+        ["id=product_attribute_75_5_31_96", "id"],
+        ["name=product_attribute_75_5_31", "name"],
+        ["css=#product_attribute_75_5_31_96", "css:finder"],
+        ["xpath=//input[@id='product_attribute_75_5_31_96']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[6]/dl/dd/ul/li/input", "xpath:idRelative"],
+        ["xpath=//li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ae6055d-8d02-46dc-b5e8-1f531fb3bcc9",
+      "comment": "",
+      "command": "click",
+      "target": "id=product_attribute_75_8_35_107",
+      "targets": [
+        ["id=product_attribute_75_8_35_107", "id"],
+        ["name=product_attribute_75_8_35", "name"],
+        ["css=#product_attribute_75_8_35_107", "css:finder"],
+        ["xpath=//input[@id='product_attribute_75_8_35_107']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[6]/dl/dd[4]/ul/li/input", "xpath:idRelative"],
+        ["xpath=//dd[4]/ul/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8a50936-7cce-431f-ad78-60cb04b327d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button-75",
+      "targets": [
+        ["id=add-to-cart-button-75", "id"],
+        ["css=#add-to-cart-button-75", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button-75']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[8]/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "589365d0-a50a-48ef-896b-ff4e91c3d2a9",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//*[@id=\"bar-notification\"]/p",
+      "targets": [],
+      "value": "a"
+    }, {
+      "id": "6a597c63-8340-4823-ba28-31e07cdaae87",
+      "comment": "",
+      "command": "echo",
+      "target": "${a}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "402bf32d-6d8c-4f77-b343-5538493b4e93",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"bar-notification\"]/p",
+      "targets": [],
+      "value": "The product has been added to your shopping cart"
+    }, {
+      "id": "b99596cd-9429-472a-8054-247233e08e27",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0b2626d5-01d3-419d-b27b-cfff7c11a419",
+    "name": "TC5",
+    "commands": [{
+      "id": "d3cf1681-8e0e-4819-aa3f-62c567176b36",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48060de3-0d35-423b-8e72-9f853e008068",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c80e1aa-38b7-43f8-b153-250a2f04f68d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ico-cart > .cart-label",
+      "targets": [
+        ["css=.ico-cart > .cart-label", "css:finder"],
+        ["xpath=//li[@id='topcartlink']/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Shopping cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0bf1431-77c7-42ba-964b-7c328e2a3141",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkout",
+      "targets": [
+        ["id=checkout", "id"],
+        ["name=checkout", "name"],
+        ["css=#checkout", "css:finder"],
+        ["xpath=//button[@id='checkout']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49331604-09f7-4047-92be-15c2c54c5464",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-button-icon-primary",
+      "targets": [
+        ["css=.ui-button-icon-primary", "css:finder"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fc4379f-7aa2-4283-a302-66b221b7dffd",
+      "comment": "",
+      "command": "click",
+      "target": "id=termsofservice",
+      "targets": [
+        ["id=termsofservice", "id"],
+        ["name=termsofservice", "name"],
+        ["css=#termsofservice", "css:finder"],
+        ["xpath=//input[@id='termsofservice']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d7cf01e-577a-4eb3-a58c-2a5228ad8ea0",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkout",
+      "targets": [
+        ["id=checkout", "id"],
+        ["name=checkout", "name"],
+        ["css=#checkout", "css:finder"],
+        ["xpath=//button[@id='checkout']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Checkout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec84d204-57a3-41b9-8db2-0cadf17215e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkout-as-guest-button",
+      "targets": [
+        ["css=.checkout-as-guest-button", "css:finder"],
+        ["xpath=//input[@value='Checkout as Guest']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7726ff5-0495-4a2a-8063-c2f0caaac6bf",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "4718f9cc-b4d8-4deb-8844-2a0f19aa991c",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "${x}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b10adec-f584-417d-95a4-1bb4d3d10960",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5bd9270a-79d4-49fd-8f56-4bfc23761f7c",
+    "name": "TC6",
+    "commands": [{
+      "id": "2a9aca95-c6e5-4cb5-963b-5fd2b79c5bb4",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com/cart",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b084f361-076a-475c-9e98-f95408a36601",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97643440-2014-48ef-a7b6-caac7f6e2952",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ico-cart > .cart-label",
+      "targets": [
+        ["css=.ico-cart > .cart-label", "css:finder"],
+        ["xpath=//li[@id='topcartlink']/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Shopping cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88450171-e098-456a-aeec-634c574c4c36",
+      "comment": "",
+      "command": "click",
+      "target": "css=.order-summary-content",
+      "targets": [
+        ["css=.order-summary-content", "css:finder"],
+        ["xpath=//div[4]/div/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f98e8787-61d4-46e8-8a5e-d27a48eb7380",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=/html/body/div[4]/div[1]/div[4]/div/div[2]/div[2]/div",
+      "targets": [],
+      "value": "a"
+    }, {
+      "id": "b9f28e64-ca90-438d-9aaa-4c8511ed4c25",
+      "comment": "",
+      "command": "echo",
+      "target": "${a}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1364571c-0ae4-405e-a8de-4c0d32b117a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.order-summary-content",
+      "targets": [
+        ["css=.order-summary-content", "css:finder"],
+        ["xpath=//div[4]/div/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfb13527-4683-4497-8ac2-29a8ebd9e9ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.center-1",
+      "targets": [
+        ["css=.center-1", "css:finder"],
+        ["xpath=//div[4]/div/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "300a60aa-9112-4884-a64f-4eefcbe54edf",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div[4]/div[1]/div[4]/div/div[2]/div[2]/div",
+      "targets": [],
+      "value": "Your Shopping Cart is empty!"
+    }, {
+      "id": "d6748a58-f98a-41e2-9ab7-0c748c963f2e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1d15790b-0643-45fd-b572-75346213b2f3",
+    "name": "TC8",
+    "commands": [{
+      "id": "e4edf1c6-6a72-485e-86d0-54fe5653d1a9",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e4a6daa-65b3-4851-909c-a98cf8e6a3ac",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c2c9a2c-16c4-4506-bd01-8d31ded08086",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ico-wishlist > .cart-label",
+      "targets": [
+        ["css=.ico-wishlist > .cart-label", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef041123-2330-4838-810e-c310594c5dbb",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "a"
+    }, {
+      "id": "788f2959-f827-41f7-8955-ebf3c5c31a89",
+      "comment": "",
+      "command": "echo",
+      "target": "${a}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67ef2081-f160-4e77-a9f1-5f196eb9b7a9",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "${a}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e014d9f1-bfa3-4e3a-90e7-c4306b98545a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.center-1",
+      "targets": [
+        ["css=.center-1", "css:finder"],
+        ["xpath=//div[4]/div/div[4]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "114ffc8a-5943-4300-9814-14b0735fee3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wishlist-content",
+      "targets": [
+        ["css=.wishlist-content", "css:finder"],
+        ["xpath=//div/div[4]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0115904-6f34-4d01-82d1-dab27a596dc3",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=/html/body/div[4]/div[1]/div[4]/div/div/div[2]/div",
+      "targets": [],
+      "value": "b"
+    }, {
+      "id": "7a1fbcc3-0bb8-4762-a0ab-f2d02f64926d",
+      "comment": "",
+      "command": "echo",
+      "target": "${b}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d799adaf-9bf9-471a-9e27-6d8b7e89fbd3",
+      "comment": "",
+      "command": "assert",
+      "target": "b",
+      "targets": [],
+      "value": "The wishlist is empty!"
+    }, {
+      "id": "786212de-5aba-4356-8486-a68b20dbf08d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e287853c-3f2d-4027-b94f-771db74e36ba",
+    "name": "TC10",
+    "commands": [{
+      "id": "04be2d0a-f25e-403a-8252-d21c8cf38518",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6293ff9-d545-48ab-addd-a497ba059834",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28767f6a-b570-45d2-800b-a5117b4ff6ab",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact us",
+      "targets": [
+        ["linkText=Contact us", "linkText"],
+        ["css=.information li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact us')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/contactus')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/ul/li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fa87236-6bcd-42d8-b84f-4e734ed26367",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "a"
+    }, {
+      "id": "4893628a-e981-4de9-8b8c-a7e81a856ece",
+      "comment": "",
+      "command": "echo",
+      "target": "${a}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a048ea3-77f4-43b6-b911-34fcd3501075",
+      "comment": "",
+      "command": "click",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Put your contact information here. You can edit this in the admin site.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfc81135-61b9-4250-8bd9-0a6df0af7a43",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div/p",
+      "targets": [],
+      "value": "b"
+    }, {
+      "id": "98b211d7-8ef2-4915-a6db-2afcae936af0",
+      "comment": "",
+      "command": "echo",
+      "target": "${b}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d303b87b-4681-4086-b31f-a05aace9ed99",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=/html/body/div[4]/div[1]/div[4]/div[2]/div/div[2]/div/p",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3eefeaac-53b0-47ed-abdd-7d630f18df6c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "21156776-6f31-4533-96c1-918ea5c54d19",
+    "name": "TC9",
+    "commands": [{
+      "id": "e9cb0474-5d5b-44a5-9083-f5052f3bda9e",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d86a8689-a65d-4b70-9ba0-b2798cf6d1a6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3a287ec-2cc8-4f4b-8085-0bd6d9527ea0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.top-menu > li:nth-child(2)",
+      "targets": [
+        ["css=.top-menu > li:nth-child(2)", "css:finder"],
+        ["xpath=//div[2]/ul/li[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f019ea7-aa85-4e2e-b093-d78f52893852",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Accessories",
+      "targets": [
+        ["linkText=Accessories", "linkText"],
+        ["css=li:nth-child(3) > .hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Accessories')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/accessories')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Accessories')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3612147f-7dde-4672-ad91-eb81570b547a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Computers')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/computers')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e451fce-61f9-47ef-ac33-2f403c3270b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Computers')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/computers')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64a4a93c-6dbc-48cc-9fc8-2afeb4148a4f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Accessories",
+      "targets": [
+        ["linkText=Accessories", "linkText"],
+        ["css=li:nth-child(3) > .hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Accessories')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/accessories')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Accessories')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d6f69e54-4715-4759-9666-8fce1cd0b7c2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://demowebshop.tricentis.com/"],
+  "plugins": []
+}
