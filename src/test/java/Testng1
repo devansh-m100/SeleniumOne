@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="methods" name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="Testng2"/>
+      <class name="Testng1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
